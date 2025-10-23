@@ -1,0 +1,13 @@
+<!DOCTYPE HTML><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Код для преобразования старой MySQL таблицы в новую</title><link rel="stylesheet" href="https://2828.ru/css/3000.css"><main><h3>Код для преобразования старой MySQL таблицы в новую</h3>
+<p><>
+<p><br />
+ALTER TABLE `%TBL2NAME%` DROP `NEW`;<br />
+ALTER TABLE `%TBL2NAME%` DROP `DES`;<br />
+ALTER TABLE `%TBL2NAME%` DROP `SORT`;<br />
+ALTER TABLE `%TBL2NAME%` DROP `VER`;<br />
+ALTER TABLE `%TBL2NAME%` DROP `REM`;<br />
+ALTER TABLE `%TBL2NAME%` CHANGE `BODY` `TXT` text;<br />
+ALTER TABLE `%TBL2NAME%` CHANGE `STAT` `MXU` int(10);<br />
+ALTER TABLE `%TBL2NAME%` CHANGE `TYPE` `TYP` tinyint(3);<br />
+UPDATE `%TBL2NAME%` SET SKIN=3;<>
+<p><></main>
